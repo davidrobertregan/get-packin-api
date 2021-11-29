@@ -1,0 +1,2 @@
+class UserGearItemsController < ApplicationController
+end
