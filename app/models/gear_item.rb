@@ -1,0 +1,2 @@
+class GearItem < ApplicationRecord
+end
