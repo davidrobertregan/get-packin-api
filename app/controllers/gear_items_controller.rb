@@ -26,4 +26,15 @@ class GearItemsController < ApplicationController
             render json: { error: "Gear not found"}, status: :not_found
         end
     end
+
+    def create
+        item = current_user.gear_items.create(gear_item_params)
+        render json: item
+    end
+
+    private 
+
+    def gear_item_params
+        params.permit(:name, :category, :image, :weight, :description, :quantity)
+    end
 end
