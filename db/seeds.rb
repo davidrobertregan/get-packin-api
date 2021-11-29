@@ -8,7 +8,8 @@ gear_items.each do |g|
         description: g['description'],
         weight: g['weight'],
         packed: g['packed'],
-        quantity: g['quantity']
+        quantity: g['quantity'],
+        user: User.first
     )
 end
 

@@ -1,3 +1,3 @@
 class GearItemSerializer < ActiveModel::Serializer
-  attributes :id, :category, :image, :description, :weightpacked, :quantity
+  attributes :id, :name, :category, :image, :description, :weight, :packed, :quantity
 end

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :user_gear_items
-  resources :names
+  resources :gear_items, only: [:index, :show, :destroy]
   get "/me", to: "users#show"
   post "/signup", to: "users#create"
   post "/login", to: "sessions#create"

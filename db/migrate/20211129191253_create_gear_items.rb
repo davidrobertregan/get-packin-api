@@ -8,6 +8,7 @@ class CreateGearItems < ActiveRecord::Migration[6.1]
       t.integer :weight
       t.boolean :packed
       t.integer :quantity
+      t.belongs_to :user
 
       t.timestamps
     end
