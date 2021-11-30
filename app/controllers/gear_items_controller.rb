@@ -45,6 +45,6 @@ class GearItemsController < ApplicationController
     private 
 
     def gear_item_params
-        params.permit(:name, :category, :image, :weight, :description, :quantity)
+        params.permit(:name, :category, :image, :weight, :description, :quantity, :packed)
     end
 end
