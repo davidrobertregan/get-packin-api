@@ -32,6 +32,16 @@ class GearItemsController < ApplicationController
         render json: item
     end
 
+    def update
+        item = current_user.gear_items.find_by(id: params[:id])
+        if item
+            item.update(gear_item_params)
+            render json: item
+        else
+            render json: { error: "Gear not found"}, status: :not_found
+        end
+    end
+
     private 
 
     def gear_item_params
