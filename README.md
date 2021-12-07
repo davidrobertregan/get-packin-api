@@ -1,3 +1,3 @@
 # Get Packin' Rails API
 
-- [front-end repo] and more information (https://github.com/davidrobertregan/get-packin)
+- [front-end repo](https://github.com/davidrobertregan/get-packin) and more information
